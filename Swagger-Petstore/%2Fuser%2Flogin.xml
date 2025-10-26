@@ -43,13 +43,21 @@ Logs user into the system</con:description>
       <con:params/>
     </con:representation>
     <con:request name="Request 1" id="7a0acdcf-bd68-4390-811e-a6db759b400e" mediaType="application/json">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://petstore.swagger.io/v2/user/login</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
-      <con:parameters/>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="password" value="test"/>
+        <con:entry key="username" value="test"/>
+      </con:parameters>
       <con:environmentSpec>
         <con:entry environmentId="0f657e14-0252-42e0-a3ab-a9b2ab425926">
           <con:authProfile>Inherit From Parent</con:authProfile>

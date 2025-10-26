@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="51005e74-7e40-437a-a2f7-6448a892e1f3" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="order_api" searchProperties="true" timeout="0">
+  <con:settings>
+    <con:setting id="51005e74-7e40-437a-a2f7-6448a892e1f3fileName">order_api</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="orderid_validation" id="ed9ea36f-f143-4fae-a4f9-cdbc7ef5e4eb">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/store/order/{orderId}" methodName="getOrderById" xsi:type="con:RestRequestStep">
+      <con:restRequest name="orderid_validation" id="8bfb805e-6ecc-47f5-96bd-544e0c1678cb" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://petstore.swagger.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://petstore.swagger.io/v2/store/order/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="46b5556d-450f-48db-849f-f08599f48470" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="orderId" value="2"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="0f657e14-0252-42e0-a3ab-a9b2ab425926">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="e8a1c55e-db7b-4e82-b346-08b3a318f656">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -66,12 +66,17 @@ Get user by user name</con:description>
       <con:params/>
     </con:representation>
     <con:request name="Request 1" id="64ab6040-fee5-4fa1-bf18-8f738a9e3f5b" mediaType="application/json">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://petstore.swagger.io/v2/user/</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="0f657e14-0252-42e0-a3ab-a9b2ab425926">

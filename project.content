@@ -13,3 +13,4 @@ Swagger-Petstore\%2Fuser%2Flogin.xml
 Swagger-Petstore\%2Fuser%2Flogout.xml
 Swagger-Petstore\%2Fuser%2F%7Busername%7D.xml
 Test-Suite-1\Test-Case-1.xml
+Test-Suite-2\order_api.xml
