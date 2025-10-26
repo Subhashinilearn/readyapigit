@@ -22,10 +22,12 @@ Returns pet inventories by status</con:description>
     <con:request name="Request 1" id="398cf680-70e8-45de-98d3-9ddcf87151ae" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="0f657e14-0252-42e0-a3ab-a9b2ab425926">

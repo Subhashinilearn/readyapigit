@@ -37,8 +37,10 @@ Create user</con:description>
       <con:mediaType>application/json</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="b14730ca-b7cd-4c7f-8f7e-5c91c9b6eab4" mediaType="application/json">
-      <con:settings/>
+    <con:request name="Request 1" id="b14730ca-b7cd-4c7f-8f7e-5c91c9b6eab4" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
       <con:request>{\r
   "id" : 0,\r
@@ -50,10 +52,12 @@ Create user</con:description>
   "phone" : "string",\r
   "userStatus" : 0\r
 }</con:request>
+      <con:originalUri>https://petstore.swagger.io/v2/user</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="0f657e14-0252-42e0-a3ab-a9b2ab425926">
